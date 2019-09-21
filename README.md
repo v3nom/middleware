@@ -11,3 +11,6 @@ Handles panic and allows to provide user friendly message or redirect to error p
 
 ### Rate limiter middleware (NOT TESTED IN PRODUCTION)
 Limits network requests from single IP using provided time function. 
+
+### Cookie auth middleware
+Decodes user object from requests cookie and adds to context

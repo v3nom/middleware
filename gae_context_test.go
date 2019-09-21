@@ -6,10 +6,10 @@ import (
 	"testing"
 )
 
-func TestContextMiddleware(t *testing.T) {
+func TestGAEContextMiddleware(t *testing.T) {
 	req, _ := http.NewRequest("GET", "/test", nil)
 
-	Context(nil, nil, req, func(ctx context.Context) {
+	AppEngineContext(nil, nil, req, func(ctx context.Context) {
 		if ctx == nil {
 			t.Fatalf("Expected context to not be nil")
 		}
