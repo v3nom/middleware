@@ -20,7 +20,9 @@ var getNow = func() time.Time {
 // LimitRate creates rate limitter middleware using provided time bucketing function
 func LimitRate(timeFun func(time.Time) time.Time, limit int) pipes.Middleware {
 	var rateWindow string
-	entry := &rateEntry{}
+	entry := &rateEntry{
+		IPs: map[string]int{},
+	}
 
 	return func(ctx context.Context, w http.ResponseWriter, r *http.Request, next pipes.Next) {
 		ip := r.RemoteAddr
