@@ -1,5 +1,5 @@
 module github.com/v3nom/middleware
 
-go 1.13
+go 1.15
 
-require github.com/v3nom/pipes v0.0.0-20190518131510-1defa98b0fbd
+require github.com/v3nom/pipes v1.0.0

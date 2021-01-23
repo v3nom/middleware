@@ -19,11 +19,12 @@ func TestContextMiddleware(t *testing.T) {
 	})
 }
 
-var aKey pipes.ContextKey = "akey"
-var bKey pipes.ContextKey = "bkey"
-
 func TestAddContextMiddleware(t *testing.T) {
-	options := map[pipes.ContextKey]interface{}{
+	aKey := pipes.ContextKey("akey")
+	type NewContextKey string
+	bKey := NewContextKey("bkey")
+
+	options := map[interface{}]interface{}{
 		aKey: "a",
 		bKey: "b",
 	}

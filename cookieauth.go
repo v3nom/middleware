@@ -12,7 +12,7 @@ type cookieDecoder = func(context.Context, *http.Cookie) map[string]string
 type userFactory = func(map[string]string) interface{}
 
 // User context key
-const User pipes.ContextKey = "User"
+const User = pipes.ContextKey("User")
 
 // CookieAuth creates cookie auth middleware.
 func CookieAuth(authCookieName string, cookieDec cookieDecoder, userFac userFactory) pipes.Middleware {

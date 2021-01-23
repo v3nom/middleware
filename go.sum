@@ -1,2 +1,4 @@
 github.com/v3nom/pipes v0.0.0-20190518131510-1defa98b0fbd h1:wKDgNE+pFtlurcWwALtrPtIM9FcUqL4Hr4TMzGEji+U=
 github.com/v3nom/pipes v0.0.0-20190518131510-1defa98b0fbd/go.mod h1:Zc+O1Nb8y/5iGnHoE9dsXt9Jxyd4xewp8gm6BXfOey0=
+github.com/v3nom/pipes v1.0.0 h1:Q/RtQCcorYNOSRev6YD0Na9tdb4jiagh/VlKeCcN7m8=
+github.com/v3nom/pipes v1.0.0/go.mod h1:/7Q4+L2R8UrmARMMF849Y8YrHwbYJxDFzqCVL6kVnSk=

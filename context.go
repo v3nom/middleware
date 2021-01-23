@@ -13,7 +13,7 @@ func Context(ctx context.Context, w http.ResponseWriter, r *http.Request, next p
 }
 
 // AddOptions adds context options
-func AddOptions(options map[pipes.ContextKey]interface{}) pipes.Middleware {
+func AddOptions(options map[interface{}]interface{}) pipes.Middleware {
 	return func(ctx context.Context, w http.ResponseWriter, r *http.Request, next pipes.Next) {
 		if options != nil {
 			for k, v := range options {
